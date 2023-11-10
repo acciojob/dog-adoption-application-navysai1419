@@ -7,6 +7,39 @@
 </head>
 
 <body>
+	<form method="post" action="submit_feedback.php">
+	<div>
+	    <label for="name">Name</label>
+	    <input type="text" id="name" name="name" placeholder="Name"  required>
+	 </div>
+		<div>
+            <label for="address">Address</label>
+	        <input type="text" id="address" name="address" placeholder="address" required>
+	 </div>
+		<div>
+			<label for="multiSelect">Please select your preferred breeds</label>
+	         <select id="multiSelect" name="multiSelect" required>
+                <option value="" disabled selected>Please select your preferred breeds</option>
+                <option value="tata">tata</option>
+                <option value="audi">audi</option>
+                <option value="tesla">tesla</option>
+                <option value="wisper">wisper</option>
+            </select>
+	   </div>
+		
+		<div>
+			<label for="phone">Phone Number</label>
+	        <input type="phone" id="phone" name="phone" placeholder="xxx-xxx-xxxx">
+	    </div>
+		
+		<div>
+	        <input type="checkbox" name="tos"id="tos"required>
+			<label for="tos">Value should be: "Have you ever lived with a Dog before?"</label>
+	   </div>
+		<div>
+			<button type="submit">Submit</button>
+	 </div>
+	</form>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
